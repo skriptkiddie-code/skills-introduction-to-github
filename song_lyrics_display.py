@@ -23,13 +23,27 @@ class SongLyricsDisplay:
             lyrics (list or str): Song lyrics as a list of lines or a single string
             rest_interval (float): Time in seconds to wait between displaying lines
             stop_time (float): Optional total time in seconds after which to stop displaying
+        
+        Raises:
+            TypeError: If lyrics is not a string or list
+            ValueError: If rest_interval or stop_time is negative
         """
+        # Validate lyrics input
         if isinstance(lyrics, str):
             self.lyrics = lyrics.strip().split('\n')
-        else:
+        elif isinstance(lyrics, list):
             self.lyrics = lyrics
+        else:
+            raise TypeError("lyrics must be a string or list")
         
+        # Validate rest_interval
+        if rest_interval < 0:
+            raise ValueError("rest_interval must be non-negative")
         self.rest_interval = rest_interval
+        
+        # Validate stop_time
+        if stop_time is not None and stop_time < 0:
+            raise ValueError("stop_time must be non-negative or None")
         self.stop_time = stop_time
     
     def display(self):
