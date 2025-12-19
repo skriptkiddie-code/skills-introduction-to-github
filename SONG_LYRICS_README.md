@@ -26,6 +26,7 @@ python3 song_lyrics_display.py
 from song_lyrics_display import SongLyricsDisplay
 
 # Example 1: Display lyrics with 1 second rest interval
+# Note: "Amazing Grace" is in the public domain (John Newton, 1772)
 lyrics = """Amazing grace, how sweet the sound
 That saved a wretch like me
 I once was lost, but now I'm found
@@ -72,6 +73,10 @@ The program includes three demo examples:
 
 - Python 3.x
 - No external dependencies required (uses only standard library)
+
+## Copyright Notice
+
+The example lyrics used in this program ("Twinkle, Twinkle, Little Star", "Row, Row, Row Your Boat", and "Amazing Grace") are all in the public domain. When using this program with your own lyrics, please ensure you have the appropriate rights or permissions to use the lyrics.
 
 ## License
 

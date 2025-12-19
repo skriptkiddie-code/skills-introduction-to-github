@@ -80,7 +80,7 @@ def main():
     """
     Main function to demonstrate the song lyrics display.
     """
-    # Sample song lyrics
+    # Sample song lyrics (Public Domain: "Twinkle, Twinkle, Little Star" by Jane Taylor, 1806)
     sample_lyrics = """Twinkle, twinkle, little star,
 How I wonder what you are!
 Up above the world so high,
@@ -116,7 +116,7 @@ How I wonder what you are!"""
     print(f"\nDisplayed {lines2} lines")
     print()
     
-    # Example 3: Display with custom lyrics
+    # Example 3: Display with custom lyrics (Public Domain: "Row, Row, Row Your Boat", traditional nursery rhyme)
     print("\nExample 3: Display with custom lyrics (2 second interval)")
     print("-" * 60)
     custom_lyrics = [
